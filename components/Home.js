@@ -62,7 +62,7 @@ function Home() {
 
       {/* TITLE */}
       <h1
-        className={`text-6xl m-10 ${
+        className={`text-center text-6xl m-10 ${
           theme === "light" ? " text-neutral-800" : "text-neutral-200"
         } font-starwars`}
       >
@@ -73,7 +73,7 @@ function Home() {
       <Form handleSearch={handleSearch} theme={theme} />
 
       {/* CARDS */}
-      <div className="w-2/5 flex flex-col items-center">{cards}</div>
+      <div className="w-full sm:w-3/5 md:1/5 flex flex-col items-center">{cards}</div>
     </div>
   );
 }

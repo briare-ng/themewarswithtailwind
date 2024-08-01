@@ -12,9 +12,9 @@ function Form(props) {
   return (
     <form
       onSubmit={handleSubmit}
-      className="w-2/5 flex justify-center align-center"
+      className="w-full md:w-3/5 lg:2/5 flex justify-center align-center"
     >
-      <div className="bg-neutral-500 w-4/5 rounded-lg">
+      <div className="bg-neutral-500 md:w-4/5 rounded-lg">
         <input
           className={`${
             props.theme == "light"
@@ -27,7 +27,7 @@ function Form(props) {
         />
       </div>
 
-      <div className="bg-neutral-500 w-1/5 rounded-lg ml-2">
+      <div className="bg-neutral-500 sm:w-1/5 rounded-lg ml-2">
         <button
           type="submit"
           className={`${
